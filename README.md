@@ -51,7 +51,7 @@
 ### 🔹 Real-Time Prediction Interface
 
 <p align="center">
-  <img src="Assets/server.png" width="500">
+  <img src="Assets/Streamlit.png" width="500">
 </p>
 
 ### 🔹 SHAP Decision Plot
