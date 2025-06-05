@@ -10,70 +10,92 @@
 
 ---
 
-## 📖 About the Project
+## 📖 Project Overview
 
-**HypeXAI** is an intelligent, real-time medical diagnostic framework that leverages **ensemble machine learning** and **explainable AI (XAI)** to detect hypertension with unmatched accuracy and clarity. This project is based on the research paper:
-
-> **HypeXAI: A Real-Time Explainable AI Framework for Accurate Hypertension Prediction**  
-> _Pijush Kanti Roy Partho, Pankaj Bhowmik_  
-> Hajee Mohammad Danesh Science and Technology University, Dinajpur, Bangladesh  
-> 📧 pijushkantiroy2040@gmail.com | pankaj.cshstu@gmail.com
+**HypeXAI** is a real-time, intelligent diagnostic system that utilizes **ensemble machine learning models** along with **explainable AI (XAI)** to accurately predict hypertension. This tool is designed for integration into clinical settings, delivering both precision and transparency in diagnosis.
 
 ---
 
 ## 🧠 Key Features
 
-- ✅ **Perfect Accuracy**: Voting Classifier, Random Forest, and Decision Tree achieved **100% accuracy** on clinical data
-- ⚡ **Real-Time Service**: Lightweight Flask API for instant predictions
-- 📊 **Explainability**: SHAP visualizations to explain the model's reasoning
-- 📁 **Dataset**: Based on 26,083 Kaggle samples with 14 clinical features
-- 🩺 **Healthcare-Driven**: Designed for early diagnosis & clinical integration
+- ✅ **Exceptional Accuracy**: Decision Tree, Random Forest, and Voting Classifier achieved **100% accuracy**
+- ⚡ **Real-Time Predictions**: Fast and responsive Flask API for real-time hypertensive state analysis
+- 🧬 **Explainable Insights**: Uses XAI techniques to provide transparent, interpretable decisions
+- 📊 **Feature-Rich Dataset**: Trained on a clinical dataset with **26,083 samples** and **14 attributes**
+- 🩺 **Healthcare-Focused**: Built for proactive hypertension screening and digital health integration
 
 ---
 
-## 🧬 Methodology Overview
+## 🧾 Clinical Features Used
 
-1. **Data Preprocessing**: Cleaning and normalizing clinical records
-2. **Model Development**: Ensemble learners (Voting, RF, DT) and comparisons with SVM & GB
-3. **Interpretability**: SHAP (SHapley Additive Explanations) to identify risk drivers
-4. **Deployment**: Flask-based web interface for real-time use
+| Feature    | Description                                                        |
+| ---------- | ------------------------------------------------------------------ |
+| `age`      | Age of the patient                                                 |
+| `sex`      | Gender (1 = male, 0 = female)                                      |
+| `cp`       | Chest pain type                                                    |
+| `trestbps` | Resting blood pressure                                             |
+| `chol`     | Serum cholesterol in mg/dl                                         |
+| `fbs`      | Fasting blood sugar > 120 mg/dl                                    |
+| `restecg`  | Resting electrocardiographic results                               |
+| `thalach`  | Maximum heart rate achieved                                        |
+| `exang`    | Exercise induced angina                                            |
+| `oldpeak`  | ST depression induced by exercise                                  |
+| `slope`    | Slope of the peak exercise ST segment                              |
+| `ca`       | Number of major vessels colored by fluoroscopy                     |
+| `thal`     | Thalassemia status                                                 |
+| `target`   | Diagnosis of hypertension (1 = hypertensive, 0 = non-hypertensive) |
 
 ---
 
-## 📈 Results & Visualizations
+## 🧪 Model Performance
 
-### 🔹 ROC Curve
+| Model             | Accuracy | ROC-AUC | Precision | Recall | F1-Score |
+| ----------------- | -------- | ------- | --------- | ------ | -------- |
+| Decision Tree     | 1.0000   | 1.0000  | 1.0000    | 1.0000 | 1.0000   |
+| Random Forest     | 1.0000   | 1.0000  | 1.0000    | 1.0000 | 1.0000   |
+| SVM               | 0.9990   | 0.9990  | 0.9980    | 0.9990 | 0.9990   |
+| Gradient Boosting | 0.9760   | 0.9740  | 0.9630    | 0.9940 | 0.9780   |
+| AdaBoost          | 0.8850   | 0.8820  | 0.8850    | 0.9090 | 0.8970   |
+| Voting Classifier | 1.0000   | 1.0000  | 1.0000    | 1.0000 | 1.0000   |
+
+---
+
+## 🚦 App Walkthrough
+
+### 🔹 Framework Overview
 
 <p align="center">
-  <img src="Assets/ROC_Curves.png" width="500">
+  <img src="Assets/Hypertension_03.png" width="600">
 </p>
 
-### 🔹 Real-Time Prediction Interface
+### 🔹 Real-Time Prediction Server
 
 <p align="center">
-  <img src="Assets/Streamlit.png" width="500">
+  <img src="Assets/Streamlit.png" width="600">
 </p>
 
-### 🔹 SHAP Decision Plot
+### 🔹 SHAP Interpretability Visual
 
 <p align="center">
-  <img src="Assets/shap_decision_plot.png" width="500">
-</p>
-
-### 🔹 SHAP Summary Plot
-
-<p align="center">
-  <img src="Assets/shap_summary_plot.png" width="500">
+  <img src="Assets/shap_merged.png" width="600">
 </p>
 
 ---
 
 ## 🧰 Tech Stack
 
-- **Programming**: Python 3.9+
+- **Programming Language**: Python 3.9+
 - **ML Libraries**: Scikit-learn, SHAP
 - **Visualization**: Matplotlib, Seaborn
-- **Web Framework**: Flask
+- **Frameworks**: Flask (for API), Streamlit (for UI)
+
+---
+
+## ⚙️ Prerequisites
+
+- Python >= 3.9
+- pip installed
+- Recommended to use a virtual environment
 
 ---
 
@@ -85,3 +107,21 @@ cd HypeXAI
 pip install -r requirements.txt
 python app.py
 ```
+
+---
+
+## 👨‍💻 Authors & Contact
+
+**Pijush Kanti Roy Partho**, **Pankaj Bhowmik**  
+Hajee Mohammad Danesh Science and Technology University, Dinajpur, Bangladesh  
+📧 pijushkantiroy2040@gmail.com | pankaj.cshstu@gmail.com
+
+---
+
+## 📄 Citation
+
+If you use this work in your research or project, please cite the original paper:
+
+> **HypeXAI: A Real-Time Explainable AI Framework for Accurate Hypertension Prediction**  
+> _Pijush Kanti Roy Partho, Pankaj Bhowmik_  
+> Hajee Mohammad Danesh Science and Technology University, Dinajpur, Bangladesh
