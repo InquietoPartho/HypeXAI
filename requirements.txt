@@ -7,7 +7,4 @@ xgboost
 catboost
 lightgbm
 ipython
-google-generativeai
-dotenv
-fpdf
-streamlit_webrtc
+streamlit
