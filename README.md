@@ -1,7 +1,7 @@
 <h1 align="center">🩺 HypeXAI: Real-Time Explainable AI for Hypertension Prediction</h1>
 
 <p align="center">
-  <img src="Assets/Hypertension_03.png" width="600" alt="HypeXAI Framework">
+  <img src="Assets/1.architecture.jpg" width="600" alt="HypeXAI Framework">
 </p>
 
 <p align="center">
@@ -65,7 +65,7 @@
 ### 🔹 Framework Overview
 
 <p align="center">
-  <img src="Assets/Hypertension_03.png" width="600">
+  <img src="Assets/1.architecture.jpg" width="600">
 </p>
 
 ### 🔹 Real-Time Prediction Server
