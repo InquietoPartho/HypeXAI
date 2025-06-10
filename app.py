@@ -11,16 +11,16 @@ scaler = joblib.load('scaler.pkl')
 
 # ----------------- Page Setup -----------------
 st.set_page_config(
-    page_title="🫀 Heart Disease Risk Predictor",
+    page_title="🫀 HypeXAI: Hypertension Risk Prediction",
     page_icon="🫀",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
 
-st.markdown("<h1 style='text-align: center;'>🫀 Heart Disease Risk Predictor</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>🫀 HypeXAI: Hypertension Risk Prediction</h1>", unsafe_allow_html=True)
 st.markdown("""
 <div style='text-align: center; font-size: 16px;'>
-Estimate <b>risk of heart disease</b> based on common clinical parameters.<br>
+Estimate <b>risk of hypertension</b> based on common clinical parameters.<br>
 Enter patient data and click <b>Predict</b> to see the results.
 </div>
 """, unsafe_allow_html=True)
